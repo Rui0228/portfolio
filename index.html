@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="蔡佳芮 — 个人作品集 · 简历 | Portfolio & Resume">
+    <meta name="keywords" content="蔡佳芮,产品设计,工业设计,智能硬件,适老化设计,AIGC,动画,作品集,portfolio">
+    <meta name="author" content="蔡佳芮">
+
+    <!-- Open Graph / Social Share -->
+    <meta property="og:title" content="蔡佳芮 — Portfolio & Resume">
+    <meta property="og:description" content="Explore my work and experience.">
+    <meta property="og:image" content="assets/social-share.png">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="蔡佳芮 — Portfolio & Resume">
+    <meta name="twitter:description" content="Explore my work and experience.">
+    <meta name="twitter:image" content="assets/social-share.png">
+
+    <title>蔡佳芮 — Portfolio & Resume</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/web-logo.png">
+    <link rel="apple-touch-icon" href="assets/web-logo.png">
+
+    <!-- Fonts: Inter for headings, Noto Sans SC for Chinese -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ====== 导航栏 ====== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="assets/web-logo.png" alt="Logo" class="logo-img" onerror="this.style.display='none'">
+                <span class="logo-text">蔡佳芮</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">首页</a></li>
+                <li><a href="#projects" class="nav-link">项目</a></li>
+                <li><a href="#about" class="nav-link">关于</a></li>
+                <li><a href="#contact" class="nav-link">联系</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="菜单">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ====== 主视觉区 Hero ====== -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge glass">👋 欢迎来访</div>
+            <h1 class="hero-title">
+                你好，我是<br>
+                <span class="gradient-text">蔡佳芮</span>
+            </h1>
+            <p class="hero-subtitle">
+                懂艺术表达，也懂产品落地；以用户需求为起点，以工程品质为标准，探索智能时代下的创新设计。
+            </p>
+            <p class="hero-description glass">
+                我是一名专注于智能产品创新与用户体验的工业设计师。我相信优秀设计不仅要解决问题，更应该建立人与科技、生活之间有意义的连接。
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">
+                    浏览作品
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M7 5l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="resume.pdf" class="btn btn-glass" target="_blank">
+                    下载简历
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M10 3v10m0 0l-4-4m4 4l4-4M4 15h12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== 作品集 / 项目展示 ====== -->
+    <section class="projects" id="projects">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag glass">📂 作品集</span>
+                <h2 class="section-title">精选项目</h2>
+                <p class="section-description">
+                    以下是我近期完成的一些代表性项目，涵盖智能硬件、适老化设计、AIGC 动画及文旅宣传等领域。
+                </p>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- 项目 1 -->
+                <article class="project-card glass-card" data-project="1">
+                    <div class="project-image">
+                        <img src="assets/project-1/image-1.png" alt="Project 1 Preview" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="project-1/" class="btn btn-primary btn-sm">查看详情</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">工业设计</span>
+                            <span class="tag">智能硬件</span>
+                            <span class="tag">CMF 设计</span>
+                        </div>
+                        <h3 class="project-title">LumiRhythm 光律 · 智能唤醒助眠灯</h3>
+                        <p class="project-desc">以昼夜节律科学为核心的智能灯具，融合日出唤醒、日落助眠与诗意交互，重塑光与生活的连接。</p>
+                    </div>
+                </article>
+
+                <!-- 项目 2 -->
+                <article class="project-card glass-card" data-project="2">
+                    <div class="project-image">
+                        <img src="assets/project-2/image-1.png" alt="Project 2 Preview" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="project-2/" class="btn btn-primary btn-sm">查看详情</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">工业设计</span>
+                            <span class="tag">智能硬件</span>
+                            <span class="tag">适老化设计</span>
+                        </div>
+                        <h3 class="project-title">智行 ZenWalk · 智能感知助行与远程监护系统</h3>
+                        <p class="project-desc">融合AI环境感知、激光可视化引导与健康监测的智能助行设备，让老年人看见危险，让家人安心守护。</p>
+                    </div>
+                </article>
+
+                <!-- 项目 3 -->
+                <article class="project-card glass-card" data-project="3">
+                    <div class="project-image">
+                        <img src="assets/project-3/image-1.png" alt="Project 3 Preview" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="project-3/" class="btn btn-primary btn-sm">查看详情</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">AIGC 动画</span>
+                            <span class="tag">文旅宣传</span>
+                            <span class="tag">数字创意</span>
+                        </div>
+                        <h3 class="project-title">焰火三晋</h3>
+                        <p class="project-desc">山西文旅宣传 AIGC 动画，以焰火串联三晋大地千年文化符号，用 AI 重新演绎华夏古文明的磅礴之美。</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== 关于我 ====== -->
+    <section class="about" id="about">
+        <div class="section-container">
+            <div class="about-grid">
+                <div class="about-intro">
+                    <span class="section-tag glass">🙋 关于我</span>
+                    <h2 class="section-title">专业背景</h2>
+                    <p class="about-text">
+                        产品设计专业本科生，具备完整的产品设计流程认知，能够从用户需求分析、概念设计、三维建模到产品落地进行系统化思考。掌握 Rhino、KeyShot、Photoshop 等专业设计工具，同时自学 PCB 设计、原理图绘制及智能设备开发流程，具备设计与技术交叉的复合能力，能够在智能硬件项目中独立完成从概念到原型的全链路工作。
+                    </p>
+                    <p class="about-text">
+                        长期关注人工智能与设计的深度融合，拥有 3 年 AI 工具应用经验，擅长利用 ChatGPT、Claude Code、VS Code 等 AI 工具辅助设计研究、数字产品开发及创意表达，持续探索 AI 提升设计效率与创新能力的方法，将前沿技术融入传统设计工作流。
+                    </p>
+                    <p class="about-text">
+                        具备多个完整项目实践经验——智能硬件产品开发、适老化产品设计、AIGC 动画创作及企业定制家具项目，积累了从用户研究、方案设计到实际落地的综合能力。注重设计价值与技术创新的结合，希望在智能产品、创新设计及数字化产品方向持续深耕。
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight glass-card">
+                            <span class="highlight-number">4+</span>
+                            <span class="highlight-label">完整项目</span>
+                        </div>
+                        <div class="highlight glass-card">
+                            <span class="highlight-number">3</span>
+                            <span class="highlight-label">年 AI 工具经验</span>
+                        </div>
+                        <div class="highlight glass-card">
+                            <span class="highlight-number">跨学科</span>
+                            <span class="highlight-label">设计 × 技术</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-skills glass-card" style="margin-top:200px;">
+                    <h3 class="skills-title">技能专长</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Rhino 三维建模</span>
+                                <span class="skill-level">90%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">KeyShot 产品渲染</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Photoshop / 视觉设计</span>
+                                <span class="skill-level">80%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">AI 工具应用（ChatGPT / Claude Code / VS Code）</span>
+                                <span class="skill-level">90%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">用户研究 / 设计思维</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">PCB 设计 / 智能硬件开发</span>
+                                <span class="skill-level">65%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 65%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">适老化设计 / 人机工程</span>
+                                <span class="skill-level">80%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">AIGC 创意设计 / 数字产品开发</span>
+                                <span class="skill-level">75%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 75%"></div></div>
+                        </div>
+                    </div>
+                    <div style="margin-top:24px;">
+                        <h4 style="font-family:var(--font-heading); font-size:0.9rem; font-weight:600; color:var(--color-text-muted); margin-bottom:12px;">工具生态</h4>
+                        <div style="display:flex; flex-wrap:wrap; gap:8px;">
+                            <span class="tag">Rhino</span>
+                            <span class="tag">KeyShot</span>
+                            <span class="tag">Photoshop</span>
+                            <span class="tag">Figma</span>
+                            <span class="tag">VS Code</span>
+                            <span class="tag">ChatGPT</span>
+                            <span class="tag">Claude Code</span>
+                            <span class="tag">Arduino</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== 联系方式 ====== -->
+    <section class="contact" id="contact">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag glass">📬 联系我</span>
+                <h2 class="section-title">保持联系</h2>
+                <p class="section-description">
+                    如果你对我的工作感兴趣，或者有合作机会，欢迎随时联系我。
+                </p>
+            </div>
+            <div class="contact-cards" style="grid-template-columns:1fr; max-width:360px; margin:0 auto;">
+                <a href="mailto:308276441@qq.com" class="contact-card glass-card">
+                    <div class="contact-icon">✉️</div>
+                    <h3>Email</h3>
+                    <p>308276441@qq.com</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== 页脚 ====== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-text">&copy; 2024 蔡佳芮. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+# Netlify deployment configuration
+# Replace [INSERT YOUR DOMAIN] with your actual domain
+
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
+
+# Custom headers for security & performance
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
