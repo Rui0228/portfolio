@@ -753,6 +753,22 @@ ul {
     outline: none;
 }
 
+/* 3-column image row (并排示例图) */
+.gallery-row-3 {
+    max-width: var(--max-width);
+    margin: 0 auto 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    align-items: start;
+}
+
+.gallery-row-3 img {
+    width: 100%;
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
 .project-back {
     text-align: center;
     padding-bottom: 60px;
@@ -857,6 +873,10 @@ ul {
     }
 
     .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-row-3 {
         grid-template-columns: 1fr;
     }
 
