@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="设计 AI 工具链 · 可视化设计编辑器与排版工作流 — 项目详情">
+    <meta name="description" content="设计 AI 工具链 · 自制的产品设计排版 Skill — 项目详情">
     <title>设计 AI 工具链 — 蔡佳芮</title>
     <link rel="icon" type="image/png" sizes="512x512" href="../assets/web-logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,13 +30,13 @@
     <main class="project-page">
         <div class="section-container">
             <div class="project-hero">
-                <span class="section-tag glass">🎨 AI 工具链</span>
+                <span class="section-tag glass">🎨 自制 AI Skill</span>
                 <h1>设计 AI 工具链</h1>
-                <p>一套面向产品设计排版的 AI 协作工作流，以及配套的可视化编辑器框架。让设计师无需写代码，就能在浏览器里直接拖拽调整海报的每个元素——用 HTML/CSS 排版替代像素级修图，让文字永不乱、产品图永不失真。</p>
+                <p>这是我为自己设计的一套产品设计排版 Skill，用来帮助设计师完成海报、封面、宣传图等排版工作。它用 HTML/CSS 替代像素级修图，让文字永不乱、随时可改、精确可控——从根上改善设计师的工作质量与效率。</p>
             </div>
 
             <div class="project-meta">
-                <span class="tag">AI 工具</span>
+                <span class="tag">自制 Skill</span>
                 <span class="tag">产品设计</span>
                 <span class="tag">排版工作流</span>
                 <span class="tag">可视化编辑器</span>
@@ -47,16 +47,96 @@
             </div>
 
             <!-- ═══════════════════════════════════════
-            技能三：产品设计排版工作流
+            为什么做这个 Skill
             ═══════════════════════════════════════ -->
             <div class="project-narrative" style="max-width:800px; margin:0 auto 80px;">
 
                 <div class="glass-card" style="padding:40px; margin-bottom:24px;">
                     <h3 style="font-family:var(--font-heading); font-size:1.15rem; font-weight:700; margin-bottom:6px;">
-                        🖼️ <span class="gradient-text">产品设计排版工作流</span> · Layout Workflow
+                        🎯 <span class="gradient-text">为什么做这个 Skill</span> · Why
                     </h3>
                     <p style="color:var(--color-text-secondary); font-size:0.92rem; line-height:1.9;">
-                        针对产品渲染图的排版需求，建立了一套"渲染图 → 分析 → HTML 排版 → 预览 → 迭代 → 导出 PNG"的闭环。核心是让 AI 处理排版与文字，而产品图本身保持像素级不变——设计可以无限迭代，但产品的结构误差永远为零。
+                        传统排版靠 Photoshop 等位图工具，存在三个痛点：文字是像素，改一次就糊一次、越改越脏；一次改动要重新导出、重新套版，效率极低；产品图一旦被 AI 重绘或过度处理，结构就会失真。这套 Skill 的出发点，就是把这些痛点一次性解决——让排版变成「可编辑、可复用、可精确控制」的工程，而不是反复修图的苦力活。
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- ═══════════════════════════════════════
+            核心优点
+            ═══════════════════════════════════════ -->
+            <div class="project-narrative" style="max-width:800px; margin:0 auto 80px;">
+
+                <div class="glass-card" style="padding:40px; margin-bottom:24px;">
+                    <h3 style="font-family:var(--font-heading); font-size:1.15rem; font-weight:700; margin-bottom:20px;">
+                        ✨ <span class="gradient-text">这套 Skill 的核心优点</span> · Strengths
+                    </h3>
+                    <div style="display:flex; flex-direction:column; gap:20px;">
+
+                        <div style="display:flex; gap:16px; align-items:flex-start;">
+                            <span style="font-size:1.4rem; flex-shrink:0;">✍️</span>
+                            <div>
+                                <strong style="color:var(--color-text); font-size:0.95rem;">文字永不乱</strong>
+                                <p style="color:var(--color-text-secondary); font-size:0.88rem; line-height:1.7; margin-top:2px;">文字用 HTML/CSS 渲染，是矢量文字而非像素。改字号、改内容都不会变糊、不会错位，永远保持清晰锐利。</p>
+                            </div>
+                        </div>
+
+                        <div style="display:flex; gap:16px; align-items:flex-start;">
+                            <span style="font-size:1.4rem; flex-shrink:0;">🔄</span>
+                            <div>
+                                <strong style="color:var(--color-text); font-size:0.95rem;">随时可编辑</strong>
+                                <p style="color:var(--color-text-secondary); font-size:0.88rem; line-height:1.7; margin-top:2px;">排版完成后不是死图。想改文字、换颜色、调位置，改一个 CSS 变量即可秒级生效，不用从头重做。</p>
+                            </div>
+                        </div>
+
+                        <div style="display:flex; gap:16px; align-items:flex-start;">
+                            <span style="font-size:1.4rem; flex-shrink:0;">🎛️</span>
+                            <div>
+                                <strong style="color:var(--color-text); font-size:0.95rem;">排版精确可控</strong>
+                                <p style="color:var(--color-text-secondary); font-size:0.88rem; line-height:1.7; margin-top:2px;">每个元素都有独立的定位变量，可以拖拽、也可以输入精确数值。位置、字号、颜色、间距全都精确到像素，还能自动吸附对齐。</p>
+                            </div>
+                        </div>
+
+                        <div style="display:flex; gap:16px; align-items:flex-start;">
+                            <span style="font-size:1.4rem; flex-shrink:0;">📷</span>
+                            <div>
+                                <strong style="color:var(--color-text); font-size:0.95rem;">一键导出 PNG</strong>
+                                <p style="color:var(--color-text-secondary); font-size:0.88rem; line-height:1.7; margin-top:2px;">最终成果一键导出高清 PNG，2x Retina 画质，自动隐藏编辑器界面，直接用于印刷、投递、发布。</p>
+                            </div>
+                        </div>
+
+                        <div style="display:flex; gap:16px; align-items:flex-start;">
+                            <span style="font-size:1.4rem; flex-shrink:0;">💾</span>
+                            <div>
+                                <strong style="color:var(--color-text); font-size:0.95rem;">同时保留源文件</strong>
+                                <p style="color:var(--color-text-secondary); font-size:0.88rem; line-height:1.7; margin-top:2px;">HTML/CSS 本身就是源文件——纯文本、可版本管理、可交接复用。不像 PSD 那样依赖专有软件，任何同事拿到都能继续改、继续用。</p>
+                            </div>
+                        </div>
+
+                        <div style="display:flex; gap:16px; align-items:flex-start;">
+                            <span style="font-size:1.4rem; flex-shrink:0;">🚀</span>
+                            <div>
+                                <strong style="color:var(--color-text); font-size:0.95rem;">切实提升质量与效率</strong>
+                                <p style="color:var(--color-text-secondary); font-size:0.88rem; line-height:1.7; margin-top:2px;">把「改一次图 → 重新导出 → 重新套版」的循环，压缩成「改变量 → 秒级预览 → 一键导出」。设计师把时间花在真正的设计决策上，而不是反复修图。</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ═══════════════════════════════════════
+            组成一：产品设计排版工作流
+            ═══════════════════════════════════════ -->
+            <div class="project-narrative" style="max-width:800px; margin:0 auto 80px;">
+
+                <div class="glass-card" style="padding:40px; margin-bottom:24px;">
+                    <h3 style="font-family:var(--font-heading); font-size:1.15rem; font-weight:700; margin-bottom:6px;">
+                        🖼️ <span class="gradient-text">组成一 · 产品设计排版工作流</span>
+                    </h3>
+                    <p style="color:var(--color-text-secondary); font-size:0.92rem; line-height:1.9;">
+                        把「渲染图」推进到「成稿」的完整闭环。核心是让 AI 处理排版与文字，产品图本身保持像素级不变——设计可以无限迭代，产品结构误差永远为零。
                     </p>
                 </div>
 
@@ -73,31 +153,19 @@
                     </p>
                 </div>
 
-                <div class="glass-card" style="padding:40px; margin-bottom:24px;">
-                    <h3 style="font-family:var(--font-heading); font-size:1.15rem; font-weight:700; margin-bottom:16px;">
-                        🎯 <span class="gradient-text">关键原则</span> · Principles
-                    </h3>
-                    <p style="color:var(--color-text-secondary); font-size:0.92rem; line-height:2.1;">
-                        <strong style="color:var(--color-text);">产品图绝对不变</strong> —— 不通过 AI 修改产品像素，结构零误差<br>
-                        <strong style="color:var(--color-text);">排版用 HTML/CSS</strong> —— 文字永不错乱，随时可编辑<br>
-                        <strong style="color:var(--color-text);">CSS 变量可编辑</strong> —— 每个设计稿顶部 :root 块就是控制面板<br>
-                        <strong style="color:var(--color-text);">场景用 AI 生成背景</strong> —— 仅在需要真实使用场景时调用，优先用排版解决问题
-                    </p>
-                </div>
-
             </div>
 
             <!-- ═══════════════════════════════════════
-            技能四：图片编辑器框架
+            组成二：图片编辑器框架
             ═══════════════════════════════════════ -->
             <div class="project-narrative" style="max-width:800px; margin:0 auto 80px;">
 
                 <div class="glass-card" style="padding:40px; margin-bottom:24px;">
                     <h3 style="font-family:var(--font-heading); font-size:1.15rem; font-weight:700; margin-bottom:6px;">
-                        🧲 <span class="gradient-text">图片编辑器框架</span> · Visual Editor Framework
+                        🧲 <span class="gradient-text">组成二 · 图片编辑器框架</span>
                     </h3>
                     <p style="color:var(--color-text-secondary); font-size:0.92rem; line-height:1.9;">
-                        一套本地部署的可视化设计编辑器，通过 CSS 变量 + HTML 属性驱动，让非开发者也能在浏览器里直接拖拽调整海报。设计师不再需要通过"改代码 → 刷新 → 再看效果"的循环来微调，而是像用 Figma 一样直接拖动元素。
+                        一套本地部署的可视化设计编辑器，通过 CSS 变量 + HTML 属性驱动，让设计师无需写代码，就能像用 Figma 一样直接拖拽调整海报的每个元素。
                     </p>
                 </div>
 
@@ -120,11 +188,9 @@
                         🏗️ <span class="gradient-text">技术架构</span> · Architecture
                     </h3>
                     <p style="color:var(--color-text-secondary); font-size:0.92rem; line-height:2.1;">
-                        框架采用"一次编写、处处复用"的设计：<br>
                         <strong style="color:var(--color-text);">editor.css</strong>（137 行）—— 编辑器 UI 样式，所有设计共用<br>
                         <strong style="color:var(--color-text);">editor.js</strong>（752 行）—— 编辑器全部逻辑，所有设计共用<br>
-                        <strong style="color:var(--color-text);">每个设计一个 HTML</strong> —— 约 200 行，通过 data-editor-* 属性声明可拖拽元素<br><br>
-                        CSS 变量自动识别类型：引号包裹是文本、#开头是颜色、数字+单位是滑块、纯数字是数值。每个变量用 [元素名] 注释标注，编辑器侧边栏自动生成人类可读的标签。
+                        <strong style="color:var(--color-text);">每个设计一个 HTML</strong> —— 约 200 行，通过 data-editor-* 属性声明可拖拽元素
                     </p>
                 </div>
 
