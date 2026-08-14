@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="硬件 AI 工作流 · 用 Claude Code 辅助硬件设计全流程 — 项目详情">
+    <meta name="description" content="硬件 AI 工作流 · 自制的 Claude Code Skill — 项目详情">
     <title>硬件 AI 工作流 — 蔡佳芮</title>
     <link rel="icon" type="image/png" sizes="512x512" href="../assets/web-logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,13 +30,13 @@
     <main class="project-page">
         <div class="section-container">
             <div class="project-hero">
-                <span class="section-tag glass">🤖 AI 工具链</span>
+                <span class="section-tag glass">🤖 自制 AI Skill</span>
                 <h1>硬件 AI 工作流</h1>
-                <p>一套基于 Claude Code 的硬件设计协作方法论。把"从想法到原理图"的完整流程拆解为可确认、可回溯的阶段性步骤，让 AI 成为可靠的硬件设计搭档——不替人做决定，但把每一步的决策依据、元件参数与检查要点都摆到台面上。</p>
+                <p>这是我为自己设计的一套 Claude Code Skill。它把硬件设计的每一步拆解成「可确认、可回溯、有依据」的流程，让 AI 不再「看起来头头是道，实际可能悄悄出错」，而是成为一个严谨、可控的硬件设计搭档。</p>
             </div>
 
             <div class="project-meta">
-                <span class="tag">AI 工具</span>
+                <span class="tag">自制 Skill</span>
                 <span class="tag">硬件设计</span>
                 <span class="tag">工作流</span>
                 <span class="tag">Claude Code</span>
@@ -47,16 +47,88 @@
             </div>
 
             <!-- ═══════════════════════════════════════
-            技能一：硬件项目渐进式构建
+            为什么做这个 Skill
             ═══════════════════════════════════════ -->
             <div class="project-narrative" style="max-width:800px; margin:0 auto 80px;">
 
                 <div class="glass-card" style="padding:40px; margin-bottom:24px;">
                     <h3 style="font-family:var(--font-heading); font-size:1.15rem; font-weight:700; margin-bottom:6px;">
-                        🧩 <span class="gradient-text">硬件项目渐进式构建</span> · Incremental Build
+                        🎯 <span class="gradient-text">为什么做这个 Skill</span> · Why
                     </h3>
                     <p style="color:var(--color-text-secondary); font-size:0.92rem; line-height:1.9;">
-                        传统做法是"一次性输出全部设计"，但硬件设计的容错率极低——一个引脚接错，整板报废。这个工作流把硬件设计拆成六个可确认的阶段，每走一步都停下来等确认，杜绝"AI 猜对了架构、却猜错了接线"的风险。
+                        硬件设计的容错率极低——一个引脚接错，整块板子就报废。而让 AI 直接输出设计，最大的隐患是：它「看起来头头是道」，却可能在某个引脚、某个型号上悄悄出错，且很难被发现。这套 Skill 的核心思路，是把「人」重新放回决策中心——AI 负责把每一步的依据、参数、检查点摆清楚，而每一步的最终决定，都由我自己来拍板。
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- ═══════════════════════════════════════
+            核心优点
+            ═══════════════════════════════════════ -->
+            <div class="project-narrative" style="max-width:800px; margin:0 auto 80px;">
+
+                <div class="glass-card" style="padding:40px; margin-bottom:24px;">
+                    <h3 style="font-family:var(--font-heading); font-size:1.15rem; font-weight:700; margin-bottom:20px;">
+                        ✨ <span class="gradient-text">这套 Skill 的核心优点</span> · Strengths
+                    </h3>
+                    <div style="display:flex; flex-direction:column; gap:20px;">
+
+                        <div style="display:flex; gap:16px; align-items:flex-start;">
+                            <span style="font-size:1.4rem; flex-shrink:0;">✅</span>
+                            <div>
+                                <strong style="color:var(--color-text); font-size:0.95rem;">一步一确认 · 全程可控</strong>
+                                <p style="color:var(--color-text-secondary); font-size:0.88rem; line-height:1.7; margin-top:2px;">每个阶段完成都停下来等我确认，AI 不主动跳步、不替我做决定。设计进度始终牢牢掌握在自己手里，而不是任由 AI 一路跑到底。</p>
+                            </div>
+                        </div>
+
+                        <div style="display:flex; gap:16px; align-items:flex-start;">
+                            <span style="font-size:1.4rem; flex-shrink:0;">🎯</span>
+                            <div>
+                                <strong style="color:var(--color-text); font-size:0.95rem;">元件选型只做推荐</strong>
+                                <p style="color:var(--color-text-secondary); font-size:0.88rem; line-height:1.7; margin-top:2px;">每个元件给「推荐型号 + 搜索关键词 + 必须满足的参数」，而不是甩一个唯一答案。换不换、换成什么，决定权永远在我自己。</p>
+                            </div>
+                        </div>
+
+                        <div style="display:flex; gap:16px; align-items:flex-start;">
+                            <span style="font-size:1.4rem; flex-shrink:0;">🔒</span>
+                            <div>
+                                <strong style="color:var(--color-text); font-size:0.95rem;">严谨到引脚级</strong>
+                                <p style="color:var(--color-text-secondary); font-size:0.88rem; line-height:1.7; margin-top:2px;">接线用「元件型号名 + 数据手册引脚名」，不用容易混淆的位号；所有引脚编号必须有数据手册依据，明确禁止编造数据。</p>
+                            </div>
+                        </div>
+
+                        <div style="display:flex; gap:16px; align-items:flex-start;">
+                            <span style="font-size:1.4rem; flex-shrink:0;">🗺️</span>
+                            <div>
+                                <strong style="color:var(--color-text); font-size:0.95rem;">阶段完善闭环</strong>
+                                <p style="color:var(--color-text-secondary); font-size:0.88rem; line-height:1.7; margin-top:2px;">架构树 → 原理详解 → 元件清单 → 逐模块确认 → 检查清单，覆盖从想法到原理图的完整链路，每个环节环环相扣，没有遗漏。</p>
+                            </div>
+                        </div>
+
+                        <div style="display:flex; gap:16px; align-items:flex-start;">
+                            <span style="font-size:1.4rem; flex-shrink:0;">♻️</span>
+                            <div>
+                                <strong style="color:var(--color-text); font-size:0.95rem;">可复用可回溯</strong>
+                                <p style="color:var(--color-text-secondary); font-size:0.88rem; line-height:1.7; margin-top:2px;">每个阶段输出结构化的文档，换一个项目依然套用同一套流程；出了问题，也能回溯定位到具体的环节，而不是从头再猜一遍。</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ═══════════════════════════════════════
+            组成一：硬件项目渐进式构建
+            ═══════════════════════════════════════ -->
+            <div class="project-narrative" style="max-width:800px; margin:0 auto 80px;">
+
+                <div class="glass-card" style="padding:40px; margin-bottom:24px;">
+                    <h3 style="font-family:var(--font-heading); font-size:1.15rem; font-weight:700; margin-bottom:6px;">
+                        🧩 <span class="gradient-text">组成一 · 硬件项目渐进式构建</span>
+                    </h3>
+                    <p style="color:var(--color-text-secondary); font-size:0.92rem; line-height:1.9;">
+                        负责把「一个想法」推进到「一张原理图」。它的六阶段流程，就是上面所说「一步一确认」的落地实现——每一步都产出可检查的中间结果，确认无误后才进入下一步。
                     </p>
                 </div>
 
@@ -66,23 +138,11 @@
                     </h3>
                     <p style="color:var(--color-text-secondary); font-size:0.92rem; line-height:2.1;">
                         <strong style="color:var(--color-text);">① 系统架构树</strong> —— 从顶层到底层树状展开，标注关键元件、GPIO 分配、信号流向与设计约束<br>
-                        <strong style="color:var(--color-text);">② 电路设计原理详解</strong> —— 每个模块讲清"是什么、为什么、怎么工作"，含关键公式与电流路径<br>
+                        <strong style="color:var(--color-text);">② 电路设计原理详解</strong> —— 每个模块讲清「是什么、为什么、怎么工作」，含关键公式与电流路径<br>
                         <strong style="color:var(--color-text);">③ 电子元件清单</strong> —— 按模块分组，每项给推荐型号 + 搜索关键词 + 必须满足的参数<br>
                         <strong style="color:var(--color-text);">④ 逐模块渐进式确认</strong> —— 一个模块确认完、给完接线说明，才进入下一个<br>
-                        <strong style="color:var(--color-text);">⑤ 原理图检查核对清单</strong> —— 逐项列出检查点，覆盖常见错误（电阻值、二极管方向、分压比）<br>
+                        <strong style="color:var(--color-text);">⑤ 原理图检查核对清单</strong> —— 逐项列出检查点，覆盖电阻值、二极管方向、分压比等常见错误<br>
                         <strong style="color:var(--color-text);">⑥ PCB 检查清单</strong> —— 布线规则与核对项（持续迭代中）
-                    </p>
-                </div>
-
-                <div class="glass-card" style="padding:40px; margin-bottom:24px;">
-                    <h3 style="font-family:var(--font-heading); font-size:1.15rem; font-weight:700; margin-bottom:16px;">
-                        ⚙️ <span class="gradient-text">核心原则</span> · Principles
-                    </h3>
-                    <p style="color:var(--color-text-secondary); font-size:0.92rem; line-height:2.1;">
-                        <strong style="color:var(--color-text);">一步一确认</strong> —— 每完成一阶段，等用户确认后再前进，不主动跳步<br>
-                        <strong style="color:var(--color-text);">不替用户做决定</strong> —— 元件选型给推荐而非唯一答案，最终选择权在用户<br>
-                        <strong style="color:var(--color-text);">用引脚功能名，不用位号</strong> —— 写"DW01 的 DOUT 接 FS8205A 的 G1"，而非"DW01 Pin1 接 U4 Pin2"<br>
-                        <strong style="color:var(--color-text);">给搜索关键词，不给商品编号</strong> —— LCSC 编号可能失效，搜索关键词 + 参数才是硬标准
                     </p>
                 </div>
 
@@ -94,40 +154,29 @@
             </div>
 
             <!-- ═══════════════════════════════════════
-            技能二：硬件电路渐进式确认
+            组成二：硬件电路渐进式确认
             ═══════════════════════════════════════ -->
             <div class="project-narrative" style="max-width:800px; margin:0 auto 80px;">
 
                 <div class="glass-card" style="padding:40px; margin-bottom:24px;">
                     <h3 style="font-family:var(--font-heading); font-size:1.15rem; font-weight:700; margin-bottom:6px;">
-                        🔌 <span class="gradient-text">硬件电路渐进式确认</span> · Progressive Verification
+                        🔌 <span class="gradient-text">组成二 · 硬件电路渐进式确认</span>
                     </h3>
                     <p style="color:var(--color-text-secondary); font-size:0.92rem; line-height:1.9;">
-                        在元件清单确定后，这套流程负责"确认一个、连接一个"，直到原理图完成。它的价值在于：把抽象的电路连接关系，用引脚功能名和 ASCII 接线图一步步落地，让每个连接都能追溯到数据手册依据。
+                        在元件清单确定后，负责「确认一个、连接一个」，直到原理图完成。它把抽象的电路连接关系，用引脚功能名和 ASCII 接线图一步步落地，让每个连接都能追溯到数据手册依据。
                     </p>
                 </div>
 
                 <div class="glass-card" style="padding:40px; margin-bottom:24px;">
                     <h3 style="font-family:var(--font-heading); font-size:1.15rem; font-weight:700; margin-bottom:16px;">
-                        📋 <span class="gradient-text">元件清单写法</span> · BOM Format
+                        📋 <span class="gradient-text">严谨体现在细节</span> · Details
                     </h3>
                     <p style="color:var(--color-text-secondary); font-size:0.92rem; line-height:2.1;">
-                        每个元件标注"必须满足的参数"——如果换型号，哪些指标不能妥协。例如：<br>
+                        <strong style="color:var(--color-text);">元件清单写「必须满足的参数」</strong> —— 如果换型号，哪些指标不能妥协。例如：<br>
                         <strong style="color:var(--color-text);">电阻 100kΩ 0603 ±1%</strong> —— 必须 1% 精度，不能降为 5%<br>
                         <strong style="color:var(--color-text);">SS34 肖特基</strong> —— 必须 Vf&lt;0.5V@1A、VR≥40V，是肖特基而非普通整流管<br>
-                        <strong style="color:var(--color-text);">DW01-A 保护芯片</strong> —— 必须确认引脚排列，不同尾缀排列可能不同
-                    </p>
-                </div>
-
-                <div class="glass-card" style="padding:40px; margin-bottom:24px;">
-                    <h3 style="font-family:var(--font-heading); font-size:1.15rem; font-weight:700; margin-bottom:16px;">
-                        🛠 <span class="gradient-text">PCB 布线规则</span> · Layout Rules
-                    </h3>
-                    <p style="color:var(--color-text-secondary); font-size:0.92rem; line-height:2.1;">
-                        <strong style="color:var(--color-text);">走线宽度按电流计算</strong> —— 按 IPC-2221 标准，先算电流再定线宽，不拍脑袋<br>
-                        <strong style="color:var(--color-text);">噪声源 vs 敏感目标</strong> —— 只有交变信号才会吵，只有模拟/高阻抗信号才会被吵；DC 不扰 DC<br>
-                        <strong style="color:var(--color-text);">退耦电容紧贴 IC</strong> —— 电容位置比线宽重要，走线长度对滤波效果影响更大<br>
-                        <strong style="color:var(--color-text);">危险引脚防护</strong> —— 明确列出禁止引出或需固定电平的引脚（如 ESP32-S3 的 GPIO45）
+                        <strong style="color:var(--color-text);">DW01-A 保护芯片</strong> —— 必须确认引脚排列，不同尾缀排列可能不同<br><br>
+                        <strong style="color:var(--color-text);">PCB 布线规则</strong> —— 走线宽度按 IPC-2221 按电流计算；退耦电容紧贴 IC；明确区分噪声源与敏感目标；危险引脚（如 ESP32-S3 的 GPIO45）禁止引出。
                     </p>
                 </div>
 
