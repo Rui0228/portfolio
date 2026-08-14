@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="设计 AI 工具链 · 可视化设计编辑器与排版工作流 — 项目详情">
+    <title>设计 AI 工具链 — 蔡佳芮</title>
+    <link rel="icon" type="image/png" sizes="512x512" href="../assets/web-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="../" class="nav-logo">
+                <img src="../assets/web-logo.png" alt="Logo" class="logo-img" onerror="this.style.display='none'">
+                <span class="logo-text">蔡佳芮</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="../#home" class="nav-link">首页</a></li>
+                <li><a href="../#projects" class="nav-link active">项目</a></li>
+                <li><a href="../#about" class="nav-link">关于</a></li>
+                <li><a href="../#contact" class="nav-link">联系</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="project-page">
+        <div class="section-container">
+            <div class="project-hero">
+                <span class="section-tag glass">🎨 AI 工具链</span>
+                <h1>设计 AI 工具链</h1>
+                <p>一套面向产品设计排版的 AI 协作工作流，以及配套的可视化编辑器框架。让设计师无需写代码，就能在浏览器里直接拖拽调整海报的每个元素——用 HTML/CSS 排版替代像素级修图，让文字永不乱、产品图永不失真。</p>
+            </div>
+
+            <div class="project-meta">
+                <span class="tag">AI 工具</span>
+                <span class="tag">产品设计</span>
+                <span class="tag">排版工作流</span>
+                <span class="tag">可视化编辑器</span>
+            </div>
+
+            <div class="project-gallery">
+                <img src="../assets/project-5/cover.svg" alt="设计 AI 工具链 封面" loading="lazy">
+            </div>
+
+            <!-- ═══════════════════════════════════════
+            技能三：产品设计排版工作流
+            ═══════════════════════════════════════ -->
+            <div class="project-narrative" style="max-width:800px; margin:0 auto 80px;">
+
+                <div class="glass-card" style="padding:40px; margin-bottom:24px;">
+                    <h3 style="font-family:var(--font-heading); font-size:1.15rem; font-weight:700; margin-bottom:6px;">
+                        🖼️ <span class="gradient-text">产品设计排版工作流</span> · Layout Workflow
+                    </h3>
+                    <p style="color:var(--color-text-secondary); font-size:0.92rem; line-height:1.9;">
+                        针对产品渲染图的排版需求，建立了一套"渲染图 → 分析 → HTML 排版 → 预览 → 迭代 → 导出 PNG"的闭环。核心是让 AI 处理排版与文字，而产品图本身保持像素级不变——设计可以无限迭代，但产品的结构误差永远为零。
+                    </p>
+                </div>
+
+                <div class="glass-card" style="padding:40px; margin-bottom:24px;">
+                    <h3 style="font-family:var(--font-heading); font-size:1.15rem; font-weight:700; margin-bottom:16px;">
+                        🔄 <span class="gradient-text">工作流闭环</span> · Pipeline
+                    </h3>
+                    <p style="color:var(--color-text-secondary); font-size:0.92rem; line-height:2.1;">
+                        <strong style="color:var(--color-text);">① 渲染图输入</strong> —— 在 3D 软件中渲染产品图，丢入 renders/ 文件夹<br>
+                        <strong style="color:var(--color-text);">② AI 分析排版</strong> —— 读取图片，设计排版，生成 HTML 设计稿<br>
+                        <strong style="color:var(--color-text);">③ 浏览器预览</strong> —— 打开本地预览链接，所见即所得<br>
+                        <strong style="color:var(--color-text);">④ 迭代修改</strong> —— 直接改 CSS 变量（字号、位置、颜色），随时可调<br>
+                        <strong style="color:var(--color-text);">⑤ 导出 PNG</strong> —— Puppeteer 一键导出最终图片
+                    </p>
+                </div>
+
+                <div class="glass-card" style="padding:40px; margin-bottom:24px;">
+                    <h3 style="font-family:var(--font-heading); font-size:1.15rem; font-weight:700; margin-bottom:16px;">
+                        🎯 <span class="gradient-text">关键原则</span> · Principles
+                    </h3>
+                    <p style="color:var(--color-text-secondary); font-size:0.92rem; line-height:2.1;">
+                        <strong style="color:var(--color-text);">产品图绝对不变</strong> —— 不通过 AI 修改产品像素，结构零误差<br>
+                        <strong style="color:var(--color-text);">排版用 HTML/CSS</strong> —— 文字永不错乱，随时可编辑<br>
+                        <strong style="color:var(--color-text);">CSS 变量可编辑</strong> —— 每个设计稿顶部 :root 块就是控制面板<br>
+                        <strong style="color:var(--color-text);">场景用 AI 生成背景</strong> —— 仅在需要真实使用场景时调用，优先用排版解决问题
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- ═══════════════════════════════════════
+            技能四：图片编辑器框架
+            ═══════════════════════════════════════ -->
+            <div class="project-narrative" style="max-width:800px; margin:0 auto 80px;">
+
+                <div class="glass-card" style="padding:40px; margin-bottom:24px;">
+                    <h3 style="font-family:var(--font-heading); font-size:1.15rem; font-weight:700; margin-bottom:6px;">
+                        🧲 <span class="gradient-text">图片编辑器框架</span> · Visual Editor Framework
+                    </h3>
+                    <p style="color:var(--color-text-secondary); font-size:0.92rem; line-height:1.9;">
+                        一套本地部署的可视化设计编辑器，通过 CSS 变量 + HTML 属性驱动，让非开发者也能在浏览器里直接拖拽调整海报。设计师不再需要通过"改代码 → 刷新 → 再看效果"的循环来微调，而是像用 Figma 一样直接拖动元素。
+                    </p>
+                </div>
+
+                <div class="glass-card" style="padding:40px; margin-bottom:24px;">
+                    <h3 style="font-family:var(--font-heading); font-size:1.15rem; font-weight:700; margin-bottom:16px;">
+                        ⚡ <span class="gradient-text">编辑器功能</span> · Features
+                    </h3>
+                    <p style="color:var(--color-text-secondary); font-size:0.92rem; line-height:2.1;">
+                        <strong style="color:var(--color-text);">拖拽移动</strong> —— 选中元素后鼠标拖拽，自动吸附对齐（阈值 5px）<br>
+                        <strong style="color:var(--color-text);">侧边栏控制</strong> —— 字号、位置、颜色、尺寸，滑块 + 输入框 + 颜色选择器<br>
+                        <strong style="color:var(--color-text);">修改文字</strong> —— 文字通过 CSS ::before 实现，改变量即改内容<br>
+                        <strong style="color:var(--color-text);">撤销 / 重做</strong> —— 最多记忆 80 步<br>
+                        <strong style="color:var(--color-text);">导出 PNG</strong> —— 2x Retina 画质，自动隐藏编辑器 UI<br>
+                        <strong style="color:var(--color-text);">复制 CSS</strong> —— 一键复制当前所有变量到剪贴板
+                    </p>
+                </div>
+
+                <div class="glass-card" style="padding:40px; margin-bottom:24px;">
+                    <h3 style="font-family:var(--font-heading); font-size:1.15rem; font-weight:700; margin-bottom:16px;">
+                        🏗️ <span class="gradient-text">技术架构</span> · Architecture
+                    </h3>
+                    <p style="color:var(--color-text-secondary); font-size:0.92rem; line-height:2.1;">
+                        框架采用"一次编写、处处复用"的设计：<br>
+                        <strong style="color:var(--color-text);">editor.css</strong>（137 行）—— 编辑器 UI 样式，所有设计共用<br>
+                        <strong style="color:var(--color-text);">editor.js</strong>（752 行）—— 编辑器全部逻辑，所有设计共用<br>
+                        <strong style="color:var(--color-text);">每个设计一个 HTML</strong> —— 约 200 行，通过 data-editor-* 属性声明可拖拽元素<br><br>
+                        CSS 变量自动识别类型：引号包裹是文本、#开头是颜色、数字+单位是滑块、纯数字是数值。每个变量用 [元素名] 注释标注，编辑器侧边栏自动生成人类可读的标签。
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="project-back">
+                <a href="../#projects" class="btn btn-glass">
+                    ← 返回作品集
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-text">&copy; 2024 蔡佳芮. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
